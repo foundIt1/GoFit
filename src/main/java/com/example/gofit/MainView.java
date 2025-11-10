@@ -11,7 +11,7 @@ public class MainView {
         UserDAO user = new UserDAO();
         Map<String, User> usering = user.getUsers();
         for (User users: usering.values()) {
-            System.out.println(users.getEmail() + users.getPassword() + users.getUID());
+            System.out.println(users.getEmail() + " " + users.getPassword() + " " +  users.getUID());
         }
         UID_DAO uidDAO = new UID_DAO();
         System.out.println("\n\n\n" + uidDAO.getCurrUid());
