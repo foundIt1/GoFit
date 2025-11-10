@@ -24,4 +24,8 @@ public class MainMenuController {
         }
         slider.setTranslateX(-176);
     }
+
+    public void onHomeButtonClick() {
+        
+    }
 }
