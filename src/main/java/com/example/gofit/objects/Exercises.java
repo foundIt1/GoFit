@@ -9,14 +9,16 @@ public class Exercises implements Serializable{
     String exercise_name;
     int calories_bph;
     double calories_burnt;
+    int UID;
 
-    public Exercises (int exercise_id, int hour, int minute, String exercise_name, int calories_bph) {
+    public Exercises (int exercise_id, int hour, int minute, String exercise_name, int calories_bph, int UID) {
         this.exercise_id = exercise_id;
         this.hour = hour;
         this.minute = minute;
         this.exercise_name = exercise_name;
         this.calories_bph = calories_bph;
         this.calories_burnt = calc_calories_burnt();
+        this.UID = UID;
     }
 
     private double calc_calories_burnt() {
